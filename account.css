@@ -1,0 +1,214 @@
+/* Reset some default styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    /* Ensure full height */
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header with flex in row */
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Header for Receipe */
+header h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Remove unnecessary style */
+nav ul {
+    list-style: none;
+}
+
+/* list in the header */
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    height: 100%;
+    background-image: url('./images/accountBackground.jpeg');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: white;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #46403f1f;
+    border-radius: 30px;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, gray, lightgray);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.input-group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, gray, lightgray);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+
+#login{
+    left: 50px;
+}
+
+#register{
+    left: 450px;
+}
+
+.form-error {
+    color: red;
+    margin-top: 8px;
+    font-size: 14px;
+    margin-left: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-success {
+    color: green;
+    margin-top: 8px;
+    font-size: 14px;
+    margin-left: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100dvh; /* Push the footer to the bottom */
+    position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+
+    nav ul li a {
+        text-align: right;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        flex: 1 1 100%;
+        /* Stack forms vertically on smaller screens */
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+
+    footer {
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+}
+

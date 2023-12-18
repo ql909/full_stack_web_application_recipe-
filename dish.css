@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    flex: 1;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.recipe-details {
+    margin-top: 20px;
+    
+}
+
+.recipe-details img {
+    max-width: 50%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    padding: 25px;
+    background-color: #f8f8f8;
+}
+
+.recipe-details p {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    font-size: 1rem;
+    padding-left: 25%;
+}
+
+.recipe-details ul {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    font-size: 1rem;
+    padding-left: 30%;
+}
+
+.recipe-details li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    position: relative;
+}
+
+.recipe-details li::before {
+    content: '\2022'; /* Unicode character for a bullet point */
+    color: black;
+    display: inline-block;
+    width: 1em;
+    margin-right: 8px; /* Adjust the spacing between the bullet point and text */
+}
+
+/* Button style */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: grey;
+}
+
+.rating-section, .save-recipe-section{
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.rating-section .btn, .save-recipe-section .btn{
+    display: inline-block;
+    padding: 4px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rating-section .btn:hover, .save-recipe-section .btn:hover{
+    background-color: grey;
+}
+
+.learn-more-section p{
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+
+
+/* Media Query for Mobile View */
+@media only screen and (max-width: 768px) {
+    header {
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        ;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        text-align: center;
+        display: block;
+    }
+
+    .recipe-details img,
+    .recipe-details img {
+        padding: 10px; /* Adjusted padding for smaller screens */
+        font-size: .5rem;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .recipe-details p {
+        margin-left: 10px;
+        font-size: 14px;
+        padding-left: 5%;
+    }
+    
+    .recipe-details ul {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        list-style-type: none;
+        font-size: 14px;
+        padding-left: 10%;
+    }
+}
