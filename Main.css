@@ -1,0 +1,220 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* Ensure full height */
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+/* Header with flex in row */
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Header for Receipe */
+header h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Remove unnecessary style */
+nav ul {
+    list-style: none;
+}
+
+/* list in the header */
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Button style */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: grey;
+}
+
+.featured-recipes {
+    padding: 40px;
+    text-align: center;
+}
+
+.featured-recipes h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.recipe-card {
+    display: inline-block;
+    width: 400px;
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: #f8f8f8;
+
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.recipe-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.recipe-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: auto;
+    text-align: center;
+}
+
+.container {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container1 {
+    max-width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container1 h2 {
+    text-align: center;
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Media Query for screens with a maximum width of 600 pixels */
+@media only screen and (max-width: 768px) {
+    header {
+        padding-left: 7.5px; /* Adjusted padding for smaller screens */
+        justify-content: space-around;
+    }
+
+    .header h1{
+        font-size: 22px;
+    }
+
+    nav ul li {
+        margin-top: 5px; /* Adjusted margin for smaller screens */
+    }
+
+    .btn {
+        margin: 5px auto; /* Center button for smaller screens */
+    }
+
+    .featured-recipes {
+        padding: 10px; /* Adjusted padding for smaller screens */
+    }
+
+    .recipe-card {
+        width: auto; /* Full width for smaller screens */
+        margin-bottom: 10px; /* Adjusted margin for smaller screens */
+        padding: 15px; /* Adjusted padding for smaller screens */
+    }
+
+    .container {
+        margin-top: 30px; /* Adjusted margin for smaller screens */
+        margin-bottom: 30px; /* Adjusted margin for smaller screens */
+        padding: 10px; /* Adjusted padding for smaller screens */
+    }
+
+    .container h2 {
+        margin-bottom: 5px; /* Adjusted margin for smaller screens */
+    }
+
+    .container1 {
+        margin: 5px;
+        margin-top: 5px; /* Adjusted margin for smaller screens */
+        margin-bottom: 5px; /* Adjusted margin for smaller screens */
+        padding: 3px; /* Adjusted padding for smaller screens */
+    }
+
+    form {
+        padding: 10px; /* Adjusted padding for smaller screens */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        margin-bottom: 10px; /* Adjusted margin for smaller screens */
+    }
+}

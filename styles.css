@@ -1,0 +1,226 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header with flex in row */
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Header for Receipe */
+header h1 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Remove unnecessary style */
+nav ul {
+    list-style: none;
+}
+
+/* list in the header */
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    position: relative;
+    padding: 100px;
+    text-align: center;
+    color: black;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('/final_project_website/images/home_recipes.jpg');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.4;
+}
+
+/* stack over the image */
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h2 {
+    font-size: 2.25rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.125rem;
+    margin-bottom: 40px;
+}
+
+/* Button style */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featured-recipes {
+    padding: 40px;
+    text-align: center;
+}
+
+.featured-recipes h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.recipe-card {
+    display: inline-block;
+    width: 400px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: #f8f8f8;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.recipe-card h3 {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+}
+
+.recipe-card p {
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: auto;
+    text-align: center;
+}
+
+.container {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container1 {
+    max-width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container1 h2 {
+    text-align: center;
+    margin-bottom: 3px;
+    font-size: 0.875rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+
+    .hero {
+        width: auto;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .recipe-card {
+        width: auto;
+        margin-right: 0;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+}
+

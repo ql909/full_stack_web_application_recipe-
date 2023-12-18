@@ -1,0 +1,92 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    /* Ensure full height */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    flex: 1;
+}
+
+/* Header with flex in row */
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Header for Receipe */
+header h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Remove unnecessary style */
+nav ul {
+    list-style: none;
+}
+
+/* list in the header */
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.recipe-details img {
+    width: 50%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: #f8f8f8;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+        padding-left: 15px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        margin-left: 15px;
+    }
+
+    .recipe-details img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
